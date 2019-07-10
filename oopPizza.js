@@ -22,7 +22,7 @@ veggiePizza.addToppings("mushrooms");
 veggiePizza.addToppings("peppers");
 
 veggiePizza.removeToppings("cheese");
-console.log("Toppings: ", veggiePizza);
+console.log(veggiePizza);
 
 
 
