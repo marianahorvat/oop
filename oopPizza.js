@@ -14,21 +14,15 @@ class Pizza {
       this.toppings.splice(index, 1);
     }
   }
-
-  newMethod(topping) {
-    return this.toppings.filter((e) => e != topping);
-  }
 }
 
 let veggiePizza = new Pizza("large", "thin", "ketchup");
-console.log(veggiePizza);
 
 veggiePizza.addToppings("mushrooms");
 veggiePizza.addToppings("peppers");
-console.log("Toppings: ", veggiePizza.toppings);
 
 veggiePizza.removeToppings("cheese");
-console.log("Toppings: ", veggiePizza.toppings);
+console.log("Toppings: ", veggiePizza);
 
 
 
