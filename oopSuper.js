@@ -11,11 +11,16 @@ class Person {
 }
 
 class Mentor extends Person {
-  // Mentor bios need to include a bit more info
+  // Super: Mentor bios need to include a bit more info
   bio() {
     return `I'm a mentor at Lighthouse Labs. ${super.bio()}`;
   }
-}
+
+   // Overriding: Completely re-define the bio method since it has more to say
+  //  bio() {
+  //   return `I'm a mentor at Lighthouse Labs. My name is ${this.name} and here's my quirky fact: ${this.quirkyFact}`;
+  // }
+
 
 class Student extends Person {
   // Student bios need to include a bit more info
